@@ -9,7 +9,6 @@ Chavez Summerville II
 >>>>>>> 7be38a798d9488b09eb0f43a3c0e7d0731680994
 Weiliang Jordan Sun
 Kevin Finck
-Josh Kozohar
 Matt Tricomi
 Sankalp Patel
 Elizabeth Cannizzo
@@ -18,3 +17,4 @@ Dorzhi Denisov
 Lizzy Houle
 Ahmed Abuharthieh
 Gerard Piserchia III
+Joshua Kozohar
