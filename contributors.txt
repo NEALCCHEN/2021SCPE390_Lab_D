@@ -2,4 +2,8 @@ TA:
 Mingxuan Chen
 Student:
 Mitchell Reiff
+<<<<<<< HEAD
 Quentin Jimenez
+=======
+Chavez Summerville
+>>>>>>> 7be38a798d9488b09eb0f43a3c0e7d0731680994
