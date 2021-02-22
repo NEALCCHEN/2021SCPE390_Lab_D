@@ -23,7 +23,14 @@ int prod(int a, int b) {
   return prod;
 }
 // 3
-int sumsq(int a, int b) {}
+int sumsq(int a, int b) {
+  int num = 0;
+    for (int i = a; i < b; i++) {
+      num += (i * i);
+    }
+  int sum = num + (b * b);
+  return sum;
+}
 // 4
 bool isPrime(int a) {}
 // 5
