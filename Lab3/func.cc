@@ -20,7 +20,15 @@ int sumsq(int a, int b) {}
 // 4
 bool isPrime(int a) {}
 // 5
-int coutPrimes(int a, int b) {}
+int countPrimes(int a, int b) {
+  int primes = 0;
+  for(int i = a; i < b; i++)
+    {
+      if ( isPrime(a))
+	count++;
+    }
+  return count;
+}
 // 6
 int gcd(int a, int b) {}
 // 7
