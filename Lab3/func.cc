@@ -114,8 +114,14 @@ int countPrimes(int a, int b) {
 
   // array functions
   // 1
-  double mean(int x[], int length) {}
-
+  double mean(int x[], int length) {
+    double cat = 0.0;
+    for(int i = 0; i < length; i++){
+        cat += x[i];
+    }
+    cat = cat/length;
+    return cat;
+  }
 <<<<<<< HEAD
   // 2
   int max(int x[], int length){} == == == =
