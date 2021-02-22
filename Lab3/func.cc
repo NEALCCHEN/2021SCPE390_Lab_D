@@ -22,11 +22,9 @@ bool isPrime(int a) {}
 // 5
 int countPrimes(int a, int b) {
   int primes = 0;
-  for(int i = a; i < b; i++)
-    {
-      if ( isPrime(a))
-	count++;
-    }
+  for (int i = a; i < b; i++) {
+    if (isPrime(a)) count++;
+  }
   return count;
 }
 // 6
@@ -69,7 +67,20 @@ int prod(int x[], int length) {}
 int sum(int x[], int length) {}
 
 // 6
-int demean(double x[], int length) { return 0; }
+int demean(double x[], int length) {
+  int sum = 0;
+  int mean = 0;
+  for (int i = 0; i < length; i++) {
+    sum += x[i];
+  }
+
+  mean = sum / length;
+
+  for (int i = 0; i < length; i++) {
+    x[i] = x[i] - mean;
+  }
+  return 0;
+}
 
 // 7
 int addToEach(double x[], int length, int delta) {}
