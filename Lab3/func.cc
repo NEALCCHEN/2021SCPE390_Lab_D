@@ -36,6 +36,7 @@ bool isPrime(int a) {}
 // 5
 int countPrimes(int a, int b)
 {
+  //Quentin Jimenez
   int primes = 0;
   for (int i = a; i < b; i++)
   {
@@ -100,6 +101,7 @@ int prod(int x[], int length) {}
 
 // 5
 int sum(int x[], int length) {
+  //Quentin Jimenez
   int sum = 0;
   for(int i = 0; i < length; i++){
     sum += x[i];
