@@ -14,11 +14,11 @@ using namespace std;
 // scalar functions
 // 1
 int sum(int a, int b) {
-    int add = 0;
-    for(int i = a; i <= b; i++){
-        add += i;
-    }
-    return add;
+  int add = 0;
+  for (int i = a; i <= b; i++) {
+    add += i;
+  }
+  return add;
 }
 // 2
 int prod(int a, int b) {
@@ -71,15 +71,21 @@ int countPrimes(int a, int b) {
     // 10
     int mean3(int a, int b) {}
     // 11
-    int min(int a, int b) {}
+    int min(int a, int b) {
+      if (a < b) {
+        cout << a << '\n';
+      } else {
+        cout << b << '\n';
+      }
+      return 0;
+    }
     // 12
-    int max(int a, int b) { // Matt Tricomi
-      if ( a > b)
-      return a;
+    int max(int a, int b) {  // Matt Tricomi
+      if (a > b)
+        return a;
 
       else
         return b;
-
     }
     // 13
     bool isEven(int a) {  // Dorzhi Denisov
@@ -124,11 +130,21 @@ int countPrimes(int a, int b) {
   // 1
   double mean(int x[], int length) {
     double cat = 0.0;
-    for(int i = 0; i < length; i++){
-        cat += x[i];
+    for (int i = 0; i < length; i++) {
+      cat += x[i];
     }
-    cat = cat/length;
+    cat = cat / length;
     return cat;
+  }
+  double AAmean(int x[], int length) {
+    double m = 0;
+    double mean = 0;
+    for (int i = 0; i <= length; i++) {
+      m += x[i];
+    }
+    mean = m / (length + 1);
+    cout << "the mean is " << mean << '\n';
+    return 0;
   }
 <<<<<<< HEAD
   // 2
