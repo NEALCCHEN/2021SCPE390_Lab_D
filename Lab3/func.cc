@@ -20,16 +20,26 @@ int sumsq(int a, int b) {}
 // 4
 bool isPrime(int a) {}
 // 5
-int countPrimes(int a, int b) {
+int countPrimes(int a, int b)
+{
   int primes = 0;
+<<<<<<< HEAD
   for (int i = a; i < b; i++) {
     if (isPrime(a)) count++;
+=======
+  for (int i = a; i < b; i++)
+  {
+    if (isPrime(a))
+      count++;
+>>>>>>> 5fbfcf8026ac23dfd2b9583799d06409156e134a
   }
   return count;
 }
 // 6
-int gcd(int a, int b) {
-  if (b == 0) return a;
+int gcd(int a, int b)
+{
+  if (b == 0)
+    return a;
   return gcd(b, a % b);
 }
 // 7
@@ -45,7 +55,13 @@ int min(int a, int b) {}
 // 12
 int max(int a, int b) {}
 // 13
-bool isEven(int a) {}
+bool isEven(int a)
+{ //Dorzhi Denisov
+  if (a % 2 == 0)
+    return true;
+  else
+    return false;
+}
 
 // 14
 double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
@@ -58,7 +74,17 @@ double mean(int x[], int length) {}
 int max(int x[], int length) {}
 
 // 3
-int min(int x[], int length) {}
+int min(int x[], int length)
+{ //Dorzhi Denisov
+  int output = x[0];
+  for (int i = 0; i < length; i++)
+  {
+
+    if (output > x[i])
+      output = x[i];
+  }
+  return output;
+}
 
 // 4
 int prod(int x[], int length) {}
@@ -100,25 +126,29 @@ int reverse(int x[], int length) { return 0; }
 // 10
 int round(double x[], int length) {}
 
-void print(int a[], int length) {
-  for (int i = 0; i < length; i++) {
+void print(int a[], int length)
+{
+  for (int i = 0; i < length; i++)
+  {
     cout << a[i] << " ";
-    if (i == (length - 1)) {
+    if (i == (length - 1))
+    {
       cout << endl;
     }
   }
 }
 
-int main() {
+int main()
+{
   cout << sum(1, 3) << ' ' << sum(1, 100)
-       << '\n';  // should work no problem, right?
+       << '\n'; // should work no problem, right?
   cout << sum(1, 1000000)
-       << '\n';  // what should this be? Don't assume it's right, check!
+       << '\n'; // what should this be? Don't assume it's right, check!
 
-  cout << prod(2, 5) << '\n';  // 2*3*4*5 = 120
+  cout << prod(2, 5) << '\n'; // 2*3*4*5 = 120
   cout << prod(3, 10) << '\n';
-  cout << prod(3, 20) << '\n';  // just note whether you think these are right
-  cout << prod(3, 30) << '\n';  // if it overflows, you don't have to fix it
+  cout << prod(3, 20) << '\n'; // just note whether you think these are right
+  cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
   cout << prod(3, 100) << '\n';
   cout << sumsq(1, 5) << '\n';
   cout << "countPrimes(1,100): " << countPrimes(1, 100) << '\n';
@@ -138,12 +168,12 @@ int main() {
 
   // array problems
   int arr[] = {1, 4, 3, 2};
-  cout << "arr avg=" << mean(arr, 4) << '\n';            // should be 2.5
-  cout << "arr max=" << max(arr, 4) << '\n';             // should be 4
-  cout << "arr max=" << min(arr, 4) << '\n';             // should be 1
-  cout << "arr prod=" << prod(arr, 4) << '\n';           // should be 24
-  cout << "arr sum=" << sum(arr, 4) << '\n';             // should be 10
-  cout << "count evens=" << countEvens(arr, 4) << '\n';  // should be 10
+  cout << "arr avg=" << mean(arr, 4) << '\n';           // should be 2.5
+  cout << "arr max=" << max(arr, 4) << '\n';            // should be 4
+  cout << "arr max=" << min(arr, 4) << '\n';            // should be 1
+  cout << "arr prod=" << prod(arr, 4) << '\n';          // should be 24
+  cout << "arr sum=" << sum(arr, 4) << '\n';            // should be 10
+  cout << "count evens=" << countEvens(arr, 4) << '\n'; // should be 10
 
   int arr2[] = {5, 6, 7, 8, 9, 10, 2, 1};
   cout << "arr avg=" << mean(arr2, 8) << '\n';
