@@ -83,7 +83,16 @@ double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
 double mean(int x[], int length) {}
 
 // 2
-int max(int x[], int length) {}
+int max(int x[], int length) {
+  // Mitchell Reiff
+  int max = 0;
+  for (int i = 0; i < length; i++) {
+    if (max <= x[i]) {
+      max = x[i];
+    }
+  }
+  return max;
+}
 
 // 3
 int min(int x[], int length)
