@@ -208,7 +208,7 @@ int countPrimes(int a, int b) {
         sum += x[i];
 >>>>>>> 00be0a42e733a2f639a76a54580dae4b9e3a9f1f
       }
-int sum(int x[], int length){
+int sum(int x[], int b){
 //Jeremy Wong
   int total = 0;
   for (int i = 0; i < b; i++){
