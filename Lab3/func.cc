@@ -13,7 +13,13 @@ using namespace std;
 
 // scalar functions
 // 1
-int sum(int a, int b) {}
+int sum(int a, int b) {
+    int add = 0;
+    for(int i = a; i <= b; i++){
+        add += i;
+    }
+    return add;
+}
 // 2
 int prod(int a, int b) {
   // Mitchell Reiff
@@ -25,6 +31,7 @@ int prod(int a, int b) {
 }
 // 3
 int sumsq(int a, int b) {
+  // Weiliang Jordan Sun
   int num = 0;
   for (int i = a; i < b; i++) {
     num += (i * i);
@@ -115,8 +122,14 @@ int countPrimes(int a, int b) {
 
   // array functions
   // 1
-  double mean(int x[], int length) {}
-
+  double mean(int x[], int length) {
+    double cat = 0.0;
+    for(int i = 0; i < length; i++){
+        cat += x[i];
+    }
+    cat = cat/length;
+    return cat;
+  }
 <<<<<<< HEAD
   // 2
   int max(int x[], int length){} == == == =
@@ -141,6 +154,19 @@ int countPrimes(int a, int b) {
     }
     return output;
   }
+  // 3
+  /* Weiliang Jordan Sun
+  int min(int x[], int length) {
+    Weiliang Jordan Sun
+    int num = 2147483647;
+       for (int i = 0; i < length; i++) {
+           if (num > x[i]) {
+           num = x[i];
+       }
+  }
+  return num;
+}
+*/
 
   // 4
   int prod(int x[], int length) {}
