@@ -12,7 +12,10 @@ using namespace std;
 
 // scalar functions
 // 1
-int sum(int a, int b) {}
+int sum(int a, int b){
+    //Jeremy Wong
+    return a +b;
+}
 // 2
 int prod(int a, int b) {
   // Mitchell Reiff
@@ -154,7 +157,14 @@ int countPrimes(int a, int b) {
         sum += x[i];
 >>>>>>> 00be0a42e733a2f639a76a54580dae4b9e3a9f1f
       }
-
+int sum(int a[], int b){
+  // Jeremy Wong
+  int total = 0;
+  for (int i = 0; i < b; i++){
+    total += a[i];
+  }
+  return total;
+}
       // 6
       int demean(double x[], int length) {
         int asum = 0;
