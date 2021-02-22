@@ -14,7 +14,14 @@ using namespace std;
 // 1
 int sum(int a, int b) {}
 // 2
-int prod(int a, int b) {}
+int prod(int a, int b) {
+  // Mitchell Reiff
+  int prod = 1;
+  for (int i = a; i <= b; i++) {
+    prod = prod * i;
+  }
+  return prod;
+}
 // 3
 int sumsq(int a, int b) {}
 // 4
