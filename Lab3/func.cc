@@ -23,11 +23,24 @@ int prod(int a, int b) {
   return prod;
 }
 // 3
-int sumsq(int a, int b) {}
+int sumsq(int a, int b) {
+  int num = 0;
+    for (int i = a; i < b; i++) {
+      num += (i * i);
+    }
+  int sum = num + (b * b);
+  return sum;
+}
 // 4
 bool isPrime(int a) {}
 // 5
+<<<<<<< HEAD
 int countPrimes(int a, int b) {
+=======
+int countPrimes(int a, int b)
+{
+  //Quentin Jimenez
+>>>>>>> 00be0a42e733a2f639a76a54580dae4b9e3a9f1f
   int primes = 0;
 <<<<<<< HEAD
   for (int i = a; i < b; i++) {
@@ -85,6 +98,7 @@ int countPrimes(int a, int b) {
   // 4
   int prod(int x[], int length) {}
 
+<<<<<<< HEAD
   // 5
   int sum(int x[], int length) {
     int sum = 0;
@@ -92,6 +106,14 @@ int countPrimes(int a, int b) {
       sum += x[i];
     }
     return sum;
+=======
+// 5
+int sum(int x[], int length) {
+  //Quentin Jimenez
+  int sum = 0;
+  for(int i = 0; i < length; i++){
+    sum += x[i];
+>>>>>>> 00be0a42e733a2f639a76a54580dae4b9e3a9f1f
   }
 
   // 6
