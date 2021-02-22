@@ -22,11 +22,11 @@ bool isPrime(int a) {}
 // 5
 int countPrimes(int a, int b) {
   int primes = 0;
-  for(int i = a; i < b; i++)
-    {
-      if ( isPrime(a))
-	count++;
-    }
+  for (int i = a; i < b; i++)
+  {
+    if (isPrime(a))
+      count++;
+  }
   return count;
 }
 // 6
@@ -35,7 +35,9 @@ int gcd(int a, int b) {
   return gcd(b, a % b);
 }
 // 7
-int hypot(int a, int b) {}
+int hypot(int a, int b) {
+  return(sqrt(pow(a, 2) + pow(b, 2)));
+}
 // 8
 int diffsq(int a, int b) {}
 // 9
@@ -68,7 +70,7 @@ int prod(int x[], int length) {}
 // 5
 int sum(int x[], int length) {
   int sum = 0;
-  for(int i = 0; i < length; i++){
+  for (int i = 0; i < length; i++) {
     sum += x[i];
   }
   return sum;
@@ -78,7 +80,12 @@ int sum(int x[], int length) {
 int demean(double x[], int length) { return 0; }
 
 // 7
-int addToEach(double x[], int length, int delta) {}
+int addToEach(double x[], int length, int delta) {
+  for (int i = 0; i < length;i++) {
+    x[i] = x[i] + delta;
+  }
+
+}
 
 // 8
 int countEvens(int x[], int length) {}
@@ -100,9 +107,9 @@ void print(int a[], int length) {
 
 int main() {
   cout << sum(1, 3) << ' ' << sum(1, 100)
-       << '\n';  // should work no problem, right?
+    << '\n';  // should work no problem, right?
   cout << sum(1, 1000000)
-       << '\n';  // what should this be? Don't assume it's right, check!
+    << '\n';  // what should this be? Don't assume it's right, check!
 
   cout << prod(2, 5) << '\n';  // 2*3*4*5 = 120
   cout << prod(3, 10) << '\n';
@@ -126,7 +133,7 @@ int main() {
   cout << "perimeter of tri=" << perimeter3(0, 0, 3, 0, 3, 3) << '\n';
 
   // array problems
-  int arr[] = {1, 4, 3, 2};
+  int arr[] = { 1, 4, 3, 2 };
   cout << "arr avg=" << mean(arr, 4) << '\n';            // should be 2.5
   cout << "arr max=" << max(arr, 4) << '\n';             // should be 4
   cout << "arr max=" << min(arr, 4) << '\n';             // should be 1
@@ -134,18 +141,18 @@ int main() {
   cout << "arr sum=" << sum(arr, 4) << '\n';             // should be 10
   cout << "count evens=" << countEvens(arr, 4) << '\n';  // should be 10
 
-  int arr2[] = {5, 6, 7, 8, 9, 10, 2, 1};
+  int arr2[] = { 5, 6, 7, 8, 9, 10, 2, 1 };
   cout << "arr avg=" << mean(arr2, 8) << '\n';
   cout << "arr max=" << max(arr2, 8) << '\n';
   cout << "arr max=" << min(arr2, 8) << '\n';
   cout << "arr prod=" << prod(arr2, 8) << '\n';
   cout << "arr sum=" << sum(arr2, 8) << '\n';
 
-  double arr3[6] = {1, 2, 3, 4, 5, 6};
+  double arr3[6] = { 1, 2, 3, 4, 5, 6 };
   demean(arr3, sizeof(arr3) / sizeof(double));
   print(arr3, 6);
 
-  double arr7[] = {2.5, 2.8, 3.1, 4.2, 9.6, 7.1, -7.3, -7.6};
+  double arr7[] = { 2.5, 2.8, 3.1, 4.2, 9.6, 7.1, -7.3, -7.6 };
   round(arr7, sizeof(arr7) / sizeof(double));
   print(arr7, sizeof(arr7) / sizeof(double));
 
@@ -153,11 +160,11 @@ int main() {
   addToEach(arr6, 7, 3);
   print(arr6, sizeof(arr6) / sizeof(double));
 
-  int r1[] = {1, 2, 3, 4, 5, 6, 7};
+  int r1[] = { 1, 2, 3, 4, 5, 6, 7 };
   reverse(r1, 7);
   print(r1, 7);
 
-  int r2[] = {1, 2, 3, 4, 5, 6, 7, 8};
+  int r2[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
   reverse(r2, 8);
   print(r2, 8);
 }
