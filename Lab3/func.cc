@@ -64,7 +64,13 @@ int min(int x[], int length) {}
 int prod(int x[], int length) {}
 
 // 5
-int sum(int x[], int length) {}
+int sum(int x[], int length) {
+  int sum = 0;
+  for(int i = 0; i < length; i++){
+    sum += x[i];
+  }
+  return sum;
+}
 
 // 6
 int demean(double x[], int length) {
