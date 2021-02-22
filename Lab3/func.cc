@@ -8,6 +8,7 @@
 #include <cstdint>
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 // scalar functions
@@ -65,7 +66,14 @@ int countPrimes(int a, int b) {
     // 11
     int min(int a, int b) {}
     // 12
-    int max(int a, int b) {}
+    int max(int a, int b) { // Matt Tricomi
+      if ( a > b)
+      return a;
+
+      else
+        return b;
+
+    }
     // 13
     bool isEven(int a) {  // Dorzhi Denisov
       if (a % 2 == 0)
