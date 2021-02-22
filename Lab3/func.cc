@@ -12,7 +12,13 @@ using namespace std;
 
 // scalar functions
 // 1
-int sum(int a, int b) {}
+int sum(int a, int b) {
+    int add = 0;
+    for(int i = a; i <= b; i++){
+        add += i;
+    }
+    return add;
+}
 // 2
 int prod(int a, int b) {
   // Mitchell Reiff
