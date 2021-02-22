@@ -8,6 +8,7 @@
 #include <cstdint>
 #include <iostream>
 #include <vector>
+#include <math.h>
 
 using namespace std;
 
@@ -98,6 +99,8 @@ int countPrimes(int a, int b) {
       else
         return false;
     }
+
+    
 <<<<<<< HEAD
     == == == = return count;
   }
@@ -128,7 +131,23 @@ int countPrimes(int a, int b) {
 >>>>>>> 92e85f2611f16133b845ad56808370a7c4f89ecf
 
   // 14
-  double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
+  double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {
+    double xy = 0;
+    double zy = 0;
+    double zx = 0;
+    double per = 0;
+
+    xy = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    zy = sqrt(pow(x3 - x2, 2) + pow(y3 - y2, 2));
+    zx = sqrt(pow(x3 - x1, 2) + pow(y3 - y1, 2));
+
+    per = xy + zy + zx;
+
+    return per;
+
+
+    
+}
 
   // array functions
   // 1
@@ -190,6 +209,17 @@ int countPrimes(int a, int b) {
 
   // 4
   int prod(int x[], int length) {}
+
+ // 4 shiddharath patel
+  int prod(int a[], int length) {
+      double product = 1;
+      for (int i = 0; i < 0; i++) {
+          product = product * a[i];
+
+      }
+
+      return product;
+  }
 
 <<<<<<< HEAD
   // 5
