@@ -75,6 +75,16 @@ int countPrimes(int a, int b)
       }
       return count;
     }
+ //Jared Skidmore        
+ double countPrimes(double start, double end) {
+	double count = 0;
+	for (double i = start; i <= end; i++) {
+		if (isPrime(i) == 1) {
+				count++;
+		}
+	}
+	return count;
+}
     // 6
     int gcd(int a, int b)
     {
@@ -366,6 +376,14 @@ int countPrimes(int a, int b)
     {
       return 0;
     }
+    
+        //Jared Skidmore
+        void reverse(int x[], int length) {
+	for (int i = (length - 1); i >= 0; i--) {
+		cout << x[i] << " ";
+	}
+	cout << "\n";
+}
 
     // 10
     int round(double x[], int length) {}
