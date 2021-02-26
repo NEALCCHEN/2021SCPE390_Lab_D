@@ -367,7 +367,18 @@ int countPrimes(int a, int b)
       cout << a << "\n";
       return 1;
     }
-
+        
+//Matthew Harshbarger        
+    int countEvens(int x[], int length) {
+    int evens = 0;
+    for (int i = 0; i < length; i++) {
+        if (x[i] % 2 == 0) {
+          evens += 1;
+        }
+    }
+    return evens;
+}
+    
     // 9 Joshua Kozohar
     int reverse(int x[], int length) void reverse(int x[], int length)
     {
