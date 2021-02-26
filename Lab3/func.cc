@@ -53,6 +53,27 @@ int sumsq(int a, int b)
 }
 // 4
 bool isPrime(int a) {}
+// Matthew Harshbarger
+bool isPrime(int a) {
+    bool isPrime = true;
+    
+    if (a == 0 || a == 1) {
+        isPrime = false;
+    }
+    else    {
+        for (int i = 2; i <= (a / 2); i++) {
+            if (a % i == 0) {
+                isPrime = false;
+            }
+        }
+    }
+    if (isPrime)
+            cout << a << " is a prime number";
+        else
+            cout << a << " is not a prime number";
+    return 0;
+}
+
 // 5
 <<<<<<< HEAD
 int countPrimes(int a, int b)
